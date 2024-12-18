@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 const indexRouter = require('./routes/index');
-const dbURI = 'mongodb+srv://testuser:testest@nodetuts.mzqvy.mongodb.net/?retryWrites=true&w=majority&appName=nodetuts';
+const dbURI = '';
 
 mongoose.connect(dbURI)
 .then(result=> app.listen(3000))
